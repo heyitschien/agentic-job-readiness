@@ -1,10 +1,10 @@
 # LingoPilot — Job Readiness Analysis
 
-**Last updated:** April 22, 2026  
+**Last updated:** April 22, 2026 (docs sprint complete)  
 **Repos:** [`lingopilot-dashboard`](https://github.com/heyitschien/lingopilot-dashboard) · [`lingopilot-engine`](https://github.com/heyitschien/lingopilot-phrase0)  
 **Live product:** [lingopilot.app](https://www.lingopilot.app)  
 **Analysis method:** Static code analysis + live system verification  
-**Current maturity:** Tier 2 (Credible) → **Target: Tier 3 (Industry Standard)**
+**Current maturity:** Tier 3 (Industry Standard) ✅ — pending: demo GIF + make repos public
 
 ---
 
@@ -95,35 +95,38 @@ All critical security and deployment blockers are resolved. Remaining gaps are d
 
 | Priority | Finding | Status |
 |---|---|---|
-| High | README says "Next.js 14" — package.json has 15.2.4 | ❌ Open |
-| High | README missing: demo GIF, problem statement, architecture diagram, AI dev notes, roadmap, tech stack rationale | ❌ Open |
-| High | README header still says "Automatically synced with v0.app" — template artifact | ❌ Open |
-| High | No GitHub Actions CI workflow → no green badge | ❌ Open |
-| Medium | `env.local.example` should be named `.env.example` | ❌ Open |
-| Medium | Missing `.cursorrules` file | ❌ Open |
-| Medium | Missing `AGENTS.md` | ❌ Open |
-| Medium | Missing `LICENSE` file | ❌ Open |
-| Low | Runs table has no live auto-refresh — requires manual page reload | ❌ Open (easy fix) |
-| Low | `lib/database.ts` has mock data stubs — not labeled clearly | ❌ Open |
+| High | README says "Next.js 14" — package.json has 15.2.4 | ✅ Fixed `6076d49` |
+| High | README missing: demo GIF placeholder, problem statement, architecture diagram, AI dev notes, roadmap, tech stack rationale | ✅ Fixed `6076d49` |
+| High | README header still says "Automatically synced with v0.app" — template artifact | ✅ Fixed `6076d49` |
+| High | No GitHub Actions CI workflow → no green badge | ✅ Fixed `6076d49` — `.github/workflows/ci.yml` |
+| Medium | `.env.example` naming — already correct | ✅ Already done |
+| Medium | Missing `.cursorrules` file | ✅ Fixed `6076d49` |
+| Medium | Missing `AGENTS.md` | ✅ Fixed `6076d49` (updated) |
+| Medium | Missing `LICENSE` file | ✅ Fixed `6076d49` (MIT) |
+| Low | Runs table has no live auto-refresh | ✅ Fixed `3ec3d8c` (10s polling) |
+| Low | `lib/database.ts` has mock data stubs — labeled in README Known Limitations | ✅ Documented |
 
 ### Engine (`lingopilot-engine`)
 
 | Priority | Finding | Status |
 |---|---|---|
-| High | README missing: live demo URL, demo GIF, architecture diagram, AI dev notes, deploy badges, tech stack | ❌ Open |
-| High | `superabase/` folder should be named `supabase/` — visible in GitHub file tree | ❌ Open |
-| Medium | No `.env.example` at root or in `services/bot` / `services/worker` | ❌ Open |
-| Medium | Missing `.cursorrules` | ❌ Open |
-| Medium | `AGENTS.md` exists but may need updating | ⚠️ Review |
-| Low | `services/bot` installation handlers are console-log stubs | ❌ Open |
+| High | README missing: live demo URL, demo GIF, architecture diagram, AI dev notes, deploy badges, tech stack | ✅ Fixed `19915b9` |
+| High | `superabase/` folder should be named `supabase/` | ✅ Fixed `19915b9` (git mv) |
+| Medium | No `.env.example` in `services/bot` | ✅ Fixed `19915b9` |
+| Medium | `services/worker/.env.example` missing runtime flags | ✅ Fixed `19915b9` |
+| Medium | Missing `.cursorrules` | ✅ Fixed `19915b9` |
+| Medium | `AGENTS.md` needed updating | ✅ Fixed `19915b9` |
+| Medium | Missing `LICENSE` | ✅ Fixed `19915b9` (MIT) |
+| Low | `services/bot` installation handlers are console-log stubs | ❌ Open — roadmap item |
 
 ### Both Repos
 
 | Item | Status |
 |---|---|
-| Repos are private — not yet pinned to GitHub profile | ❌ Not public |
-| No demo GIF recorded | ❌ Not recorded |
-| Architecture diagram (Mermaid) not in either README | ❌ Open |
+| Architecture diagram (Mermaid) in both READMEs | ✅ Done |
+| Repos are private — not yet pinned to GitHub profile | ❌ Manual step remaining |
+| Demo GIF recorded | ❌ Awaiting manual recording session |
+| Demo GIF embedded in both READMEs | ❌ After recording |
 
 ---
 
@@ -229,18 +232,20 @@ replace engineering judgment.
 
 ## Next Steps Checklist
 
-- [ ] Record demo GIF (see demo recording guide)
-- [ ] Rewrite dashboard README (12 sections, correct Next.js version, add GIF)
-- [ ] Rewrite engine README (12 sections, add Railway deploy badges)
-- [ ] Add GitHub Actions CI to dashboard (lint + type-check)
-- [ ] Add `.cursorrules` to both repos
-- [ ] Review/update `AGENTS.md` in engine; add to dashboard
-- [ ] Add `LICENSE` (MIT) to both repos
-- [ ] Rename `superabase/` → `supabase/` in engine
-- [ ] Rename `env.local.example` → `.env.example` in dashboard
-- [ ] Make both repos public
-- [ ] Pin `lingopilot-dashboard` to GitHub profile with topics: `nextjs typescript supabase upstash github-app probot localization automation`
-- [ ] Add live run auto-refresh to dashboard (10s polling interval)
+- [ ] Record demo GIF (see demo recording guide) — **awaiting manual recording**
+- [x] Rewrite dashboard README (12 sections, correct Next.js version, add GIF placeholder) — `6076d49`
+- [x] Rewrite engine README (12 sections, add Railway deploy badges) — `19915b9`
+- [x] Add GitHub Actions CI to dashboard (lint + type-check) — `.github/workflows/ci.yml` — `6076d49`
+- [x] Add `.cursorrules` to both repos — `6076d49` (dashboard) · `19915b9` (engine)
+- [x] Update `AGENTS.md` in both repos — `6076d49` · `19915b9`
+- [x] Add `LICENSE` (MIT) to both repos — `6076d49` · `19915b9`
+- [x] Rename `superabase/` → `supabase/` in engine — `19915b9`
+- [x] Rename `services/bot/.env.local.example` → `services/bot/.env.example` — `19915b9`
+- [x] Add live run auto-refresh to dashboard (10s polling interval) — `3ec3d8c`
+- [x] Supabase keepalive GitHub Actions workflow + secrets configured — `0669bc8`
+- [ ] Make both repos public — **manual step in GitHub settings**
+- [ ] Pin `lingopilot-dashboard` to GitHub profile with topics: `nextjs typescript supabase upstash github-app probot localization automation` — **manual step**
+- [ ] Embed demo GIF in both READMEs once recorded
 
 ---
 

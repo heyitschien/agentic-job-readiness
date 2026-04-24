@@ -249,4 +249,4 @@ replace engineering judgment.
 
 ---
 
-*Reference documents: [`industry-standard-repository-framework.md`](../standards/industry-standard-repository-framework.md) · [`lingopilot-repositories-docs-layout.md`](../standards/lingopilot-repositories-docs-layout.md) · [`lingopilot-recruiter-readiness-report.md`](../standards/lingopilot-recruiter-readiness-report.md)*
+*Reference documents: [`industry-standard-repository-framework.md`](../standards/industry-standard-repository-framework.md) · [`lingopilot-repositories-docs-layout.md`](../standards/lingopilot-repositories-docs-layout.md) · [`lingopilot-recruiter-readiness-report.md`](../standards/lingopilot-recruiter-readiness-report.md) · [Documentation & recruiter-readiness analysis (2026-04-24)](./documentation-recruiter-readiness-analysis.md)*

@@ -83,7 +83,7 @@ Six fixes were required to go from "code exists" to "system runs":
 5. **Demo repo cleanup** — Cleaned up `next-i18next-sample`: added `.lingopilot.yml` `i18n:` config block, added `zz-pseudo` to `next.config.mjs` locales, removed incomplete `ar` locale, rewrote README.
 6. **GitHub App URL backfill** — Updated GitHub App Homepage URL and Setup URL from dead ngrok addresses to `https://www.lingopilot.app`. Manually inserted `github_installations` row (installation `126299118`) so dashboard shows repos.
 
-Full details: `lingopilot-engine/docs/phase-2-mvp-v2/work-logs/2026-04-22-railway-e2e-runbook.md`
+Full details: `lingopilot-engine/docs/runbooks/railway-e2e.md` (E2E runbook; path updated 2026-04-23)
 
 ---
 

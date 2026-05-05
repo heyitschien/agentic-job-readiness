@@ -16,3 +16,7 @@
 
 - **Analysis doc:** Captured assistant synthesis of recruiter readiness (full portfolio vs LingoPilot flagship), sources consulted, rationale, current snapshot, and next steps → `docs/analysis/unofficial-recruiter-portfolio-validation-2026-05-04.md`.
 - **Note:** Informal only; does not replace formal standards or live audits; explicit “what we did not run” listed in that file.
+
+## 2026-05-04 (later) — Analysis doc readability pass
+
+- **Same file:** Reformatted with emoji section headers, 🟢🟡🔴🔵 legend, GitHub `> [!NOTE|TIP|IMPORTANT|WARNING|CAUTION]` callouts for color/tint in compatible viewers, and medal-priority next steps (🥇🥈🥉).

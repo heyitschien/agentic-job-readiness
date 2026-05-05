@@ -1,10 +1,10 @@
 # LingoPilot — Job Readiness Analysis
 
-**Last updated:** April 22, 2026 (docs sprint complete)  
+**Last updated:** 2026-05-04 (doc truth pass; E2E baseline still April 22, 2026)  
 **Repos:** [`lingopilot-dashboard`](https://github.com/heyitschien/lingopilot-dashboard) · [`lingopilot-engine`](https://github.com/heyitschien/lingopilot-phrase0)  
 **Live product:** [lingopilot.app](https://www.lingopilot.app)  
 **Analysis method:** Static code analysis + live system verification  
-**Current maturity:** Tier 3 (Industry Standard) ✅ — pending: demo GIF + make repos public
+**Current maturity:** Tier 3 **documentation & deploy** — largely complete. **Recruiter surface** still pending: demo GIF, public repos + profile pin/topics (see [recruiter-ready-execution-plan.md](./recruiter-ready-execution-plan.md)).
 
 ---
 
@@ -130,22 +130,30 @@ All critical security and deployment blockers are resolved. Remaining gaps are d
 
 ---
 
-## Recommended Execution Order (High → Low Leverage)
+## Doc sprint — completed items (reference)
 
-These are ordered by recruiter impact, not effort.
+The April 2026 README/CI/docs sprint cleared the items below. See commit SHAs in the [Current Gap Analysis](#current-gap-analysis) tables.
 
-| Order | Work Item | Why It's High Leverage | Estimated Time |
+| Completed | Notes |
+|---|---|
+| Dashboard README (12 sections, Next.js 15, diagram, AI notes, GIF placeholder) | `6076d49` |
+| Engine README (12 sections, deploy context, cross-links) | `19915b9` |
+| GitHub Actions CI on dashboard (lint + type-check) | `6076d49` |
+| `.cursorrules`, `AGENTS.md`, `LICENSE` (MIT) in both repos | `6076d49` · `19915b9` |
+| `superabase/` → `supabase/`, bot `.env.example`, worker `.env.example` flags | `19915b9` |
+| Live run polling on dashboard | `3ec3d8c` |
+| Architecture Mermaid in READMEs | Done |
+
+## Remaining — recruiter surface (highest leverage)
+
+Ordered by impact for outsiders discovering the work on GitHub.
+
+| Priority | Work Item | Owner | Notes |
 |---|---|---|---|
-| 1 | **Record demo GIF/video** | Only thing that cannot be faked — proof the system runs live | 30 min |
-| 2 | **Dashboard README rewrite** (12 sections) | First thing every recruiter reads — fixes Next.js 14 error, adds value prop, diagram, AI notes | 90 min |
-| 3 | **Engine README rewrite** (12 sections) | Explains the backend, adds deploy badges, cross-links dashboard | 60 min |
-| 4 | **Make repos public + pin dashboard** | Zero effort; unlocks recruiter discovery and GitHub profile impact | 5 min |
-| 5 | **GitHub Actions CI** (lint + type-check) | Green badge = instant credibility; catches regressions | 20 min |
-| 6 | **`.cursorrules` + `AGENTS.md`** in both repos | 2026 AI-native hiring signal | 15 min |
-| 7 | **Rename `superabase` → `supabase`** | Visible folder name typo in GitHub file tree | 5 min |
-| 8 | **Rename `env.local.example` → `.env.example`** in dashboard | Convention compliance | 5 min |
-| 9 | **`LICENSE` files** (MIT) in both repos | Expected for any public repo | 5 min |
-| 10 | **Live run auto-refresh** on dashboard | UX polish; makes demo more impressive | 20 min |
+| 1 | **Demo GIF or short video** embedded in both READMEs | Manual | Non-fakeable proof the pipeline runs; see [recruiter-ready-execution-plan.md](./recruiter-ready-execution-plan.md) |
+| 2 | **Make both repos public** | Manual | After secrets/history hygiene per each repo’s security docs |
+| 3 | **Pin dashboard** (or chosen entry repo) + **topics** on GitHub | Manual | e.g. `nextjs typescript supabase upstash github-app probot localization automation` |
+| 4 | **Bot installation handlers** (stubs) | Roadmap | Low severity; documented in engine gap table |
 
 ---
 
@@ -153,12 +161,12 @@ These are ordered by recruiter impact, not effort.
 
 | Tier | Label | Current State | Gap |
 |---|---|---|---|
-| Tier 1 | Passing | ✅ Already cleared | — |
-| Tier 2 | Credible | ✅ Already cleared (live system, working demo) | — |
-| **Tier 3** | **Industry Standard** | ❌ Not yet | READMEs + diagram + GIF + CI badge + AI notes + public |
-| Tier 4 | Exceptional | ❌ Future | Blog post, metrics, Show HN |
+| Tier 1 | Passing | Cleared | — |
+| Tier 2 | Credible | Cleared (live E2E) | — |
+| **Tier 3** | **Industry Standard (engineering + docs)** | **Largely met** | READMEs, diagram, CI, AI notes, licenses, deploy: done. **Portfolio polish:** GIF, public repos, profile pin/topics |
+| Tier 4 | Exceptional | Future | Blog post, metrics, Show HN |
 
-**Tier 3 can be reached in one focused half-day sprint.**
+**Single checklist for merge + verification:** [recruiter-ready-execution-plan.md](./recruiter-ready-execution-plan.md)
 
 ---
 
@@ -249,4 +257,4 @@ replace engineering judgment.
 
 ---
 
-*Reference documents: [`industry-standard-repository-framework.md`](../standards/industry-standard-repository-framework.md) · [`lingopilot-repositories-docs-layout.md`](../standards/lingopilot-repositories-docs-layout.md) · [`lingopilot-recruiter-readiness-report.md`](../standards/lingopilot-recruiter-readiness-report.md) · [Documentation & recruiter-readiness analysis (2026-04-24)](./documentation-recruiter-readiness-analysis.md)*
+*Reference documents: [`recruiter-ready-execution-plan.md`](./recruiter-ready-execution-plan.md) · [`industry-standard-repository-framework.md`](../standards/industry-standard-repository-framework.md) · [`lingopilot-repositories-docs-layout.md`](../standards/lingopilot-repositories-docs-layout.md) · [`lingopilot-recruiter-readiness-report.md`](../standards/lingopilot-recruiter-readiness-report.md) (historical — see banner) · [Documentation & recruiter-readiness analysis (2026-04-24)](./documentation-recruiter-readiness-analysis.md)*

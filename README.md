@@ -14,6 +14,8 @@ This document answers four questions:
 3. Which repositories should be treated as flagship proof of capability?
 4. What execution plan will make the GitHub profile and portfolio materially stronger?
 
+**LingoPilot (flagship):** merge-oriented recruiter checklist and verification steps — [`docs/projects/lingopilot/recruiter-ready-execution-plan.md`](docs/projects/lingopilot/recruiter-ready-execution-plan.md).
+
 ---
 
 ## Executive Summary

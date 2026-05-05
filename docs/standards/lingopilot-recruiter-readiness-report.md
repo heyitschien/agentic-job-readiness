@@ -1,5 +1,7 @@
 # LingoPilot — Recruiter Readiness Report
 
+> **Supersession notice (2026-05-04):** This document is a **historical static audit** (early April 2026). For **current** end-to-end pipeline status and the active checklist, use [`../projects/lingopilot/job-readiness-analysis.md`](../projects/lingopilot/job-readiness-analysis.md) and [`../projects/lingopilot/documentation-recruiter-readiness-analysis.md`](../projects/lingopilot/documentation-recruiter-readiness-analysis.md). For a single merge-oriented execution list, use [`../projects/lingopilot/recruiter-ready-execution-plan.md`](../projects/lingopilot/recruiter-ready-execution-plan.md). Before making `lingopilot-dashboard` / `lingopilot-engine` **public**, confirm secrets and git history against each repo’s **current** `SECURITY-*` and `docs/security/` guidance—not this snapshot alone.
+
 **Repos audited:** `lingopilot-dashboard` (381 files) · `lingopilot-engine` (239 files)  
 **Date:** April 2026  
 **Method:** Static analysis — file reads, dependency inspection, CI audit, README assessment  

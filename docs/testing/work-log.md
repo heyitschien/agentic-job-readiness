@@ -11,3 +11,8 @@
 
 - **Product:** Logged locale visual QA as a tracked feature: local dev vs PR screenshot bot, pseudo vs real locales, and roadmap hints → `docs/projects/lingopilot/product-feature-locale-visual-qa.md`.
 - **Housekeeping:** Work log and product doc committed and pushed from `agentic-job-readiness`; related repos already received earlier same-day commits (engine worker cleanup, dashboard `CLAUDE.md`, sample `lowerCaseLng` / `.gitignore`).
+
+## 2026-05-04 — Unofficial recruiter/portfolio validation log
+
+- **Analysis doc:** Captured assistant synthesis of recruiter readiness (full portfolio vs LingoPilot flagship), sources consulted, rationale, current snapshot, and next steps → `docs/analysis/unofficial-recruiter-portfolio-validation-2026-05-04.md`.
+- **Note:** Informal only; does not replace formal standards or live audits; explicit “what we did not run” listed in that file.

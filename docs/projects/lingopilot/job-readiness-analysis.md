@@ -6,6 +6,8 @@
 **Analysis method:** Static code analysis + live system verification  
 **Current maturity:** Tier 3 **documentation & deploy** — largely complete. **Recruiter surface** still pending: demo GIF, public repos + profile pin/topics (see [recruiter-ready-execution-plan.md](./recruiter-ready-execution-plan.md)).
 
+**Milestone lock (2026-05-04):** [MILESTONE-LOCK-recruiter-prep-2026-05-04.md](./MILESTONE-LOCK-recruiter-prep-2026-05-04.md) — frozen wave summary, git SHAs, readiness snapshot; **next session:** Antigravity walk-through.
+
 ---
 
 ## System Status as of April 22, 2026

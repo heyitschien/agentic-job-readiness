@@ -28,3 +28,9 @@
 - **lingopilot-dashboard** (`docs/recruiter-ready-prep`): `tsc` + `lint` green — removed non-route `GETRender`/`POSTRender` from `app/api/runs/route.ts`, added `separator` UI, `EmptyState` `action` prop, `.eslintrc.json` + `eslint` / `eslint-config-next@15.2.8`, fixed `api-keys-card` ESLint errors.
 - **lingopilot-engine** (`docs/recruiter-ready-prep`): README Known Limitations — bot installation stubs called out; worker + bot `npm run typecheck` pass.
 - **Owner still:** demo GIF, public repos, profile pin/topics (see execution plan).
+
+## 2026-05-04 — Session close / milestone lock
+
+- **Locked record:** [`docs/projects/lingopilot/MILESTONE-LOCK-recruiter-prep-2026-05-04.md`](../projects/lingopilot/MILESTONE-LOCK-recruiter-prep-2026-05-04.md) — frozen git anchors (`docs/recruiter-ready-prep` → `9f108f5` / `43c0222` / `518c0c1`), **recruiter readiness snapshot** (engineering + docs strong; GitHub surface pending GIF/public/pin; full profile still moderate), canonical doc map, handoff checklist.
+- **Execution plan** header updated to point at the milestone lock and **next session: Antigravity walk-through** (live E2E proof).
+- **Shop closed for this wave:** merge PRs when ready; no further work assumed until Antigravity session.

@@ -3,6 +3,8 @@
 **Stamped:** 2026-05-04  
 **Purpose:** Single checklist to align engineering proof, docs, and portfolio surface. **Visual proof (GIF)** and **GitHub visibility** are owner tasks on a separate branch/workstream when convenient.
 
+**Locked milestone (this wave):** [MILESTONE-LOCK-recruiter-prep-2026-05-04.md](./MILESTONE-LOCK-recruiter-prep-2026-05-04.md) — git anchors, readiness snapshot, session close. **Next session:** Antigravity live walk-through (E2E ground truth).
+
 **Related:** [job-readiness-analysis.md](./job-readiness-analysis.md) · [product-feature-locale-visual-qa.md](./product-feature-locale-visual-qa.md) · [unofficial-recruiter-portfolio-validation-2026-05-04.md](../../analysis/unofficial-recruiter-portfolio-validation-2026-05-04.md)
 
 ---
